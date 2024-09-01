@@ -37,7 +37,7 @@ const PeopleDetails = () => {
           <img className=' h-[40vh] w-full shadow-[8px_17px_38px_2px_rgba(0,0,0,.5)] object-cover' src={`https://image.tmdb.org/t/p/original/${info.detail.profile_path}`} alt="" />
           <hr className='border-none mt-10 h-[1px] bg-zinc-400' />
 
-          <div className='text-2xl text-zinc-200 flex gap-10 mt-5'>
+          <div className='text-xl text-zinc-200 flex gap-8 mt-5'>
             <a target='_blank' href={`https://www.wikidata.org/wiki/${info.externalid.wikidata_id}`}><i class="ri-earth-fill"></i></a>
 
 
@@ -53,58 +53,58 @@ const PeopleDetails = () => {
               <i class="ri-twitter-x-fill"></i>
             </a>
           </div>
-          <h1 className='mt-5 text-2xl text-zinc-400 font-semibold'>
+          <h1 className='mt-5 text-xl text-zinc-400 font-semibold'>
             Person Info
           </h1>
-          <h1 className='mt-5 text-lg text-zinc-400 font-semibold'>
+          <h1 className='mt-5 text-base text-zinc-400 font-semibold'>
             Known for
           </h1>
-          <h1 className='text-lg text-zinc-400'>
+          <h1 className='text-base text-zinc-400'>
             {info.detail.known_for_department}
           </h1>
-          <h1 className='mt-3 text-lg text-zinc-400 font-semibold'>
+          <h1 className='mt-3 text-base text-zinc-400 font-semibold'>
             Gender
           </h1>
-          <h1 className='text-lg text-zinc-400'>
+          <h1 className='text-base text-zinc-400'>
             {info.detail.gender === 2 ? "Male" : "Female"}
           </h1>
-          <h1 className='mt-3 text-lg text-zinc-400 font-semibold'>
+          <h1 className='mt-3 text-base text-zinc-400 font-semibold'>
             Birthday
           </h1>
-          <h1 className='text-lg text-zinc-400'>
+          <h1 className='text-base text-zinc-400'>
             {info.detail.birthday}
           </h1>
           <h1 className='mt-3 text-lg text-zinc-400 font-semibold'>
             Deathday
           </h1>
-          <h1 className='text-lg text-zinc-400'>
+          <h1 className='text-base text-zinc-400'>
             {info.detail.deathday ? info.detail.deathday : "Still alive"}
           </h1>
           <h1 className='mt-3 text-lg text-zinc-400 font-semibold'>
             Place of Birth
           </h1>
-          <h1 className='text-lg text-zinc-400'>
+          <h1 className='text-base text-zinc-400'>
             {info.detail.place_of_birth}
           </h1>
           <h1 className='mt-3 text-lg text-zinc-400 font-semibold'>
             Also Known As
           </h1>
-          <h1 className='text-lg text-zinc-400'>
+          <h1 className='text-base text-zinc-400'>
             {info.detail.also_known_as.join(" , ")}
           </h1>
         </div>
 
-        <div className='w-[80%]'>
-          <h1 className='mt-5 text-6xl text-zinc-400 font-black'>
+        <div className='w-[85%]'>
+          <h1 className='mt-5 text-4xl text-zinc-400 font-black'>
             {info.detail.name}
           </h1>
-          <h1 className='mt-5 text-xl text-zinc-400 font-semibold'>
+          <h1 className='mt-5 text-lg text-zinc-400 font-semibold'>
             Biography
           </h1>
-          <h1 className='mt-3 text-lg text-zinc-400'>
+          <h1 className='mt-3 text-base text-zinc-400'>
             {info.detail.biography}
           </h1>
-          <h1 className='mt-5 text-xl text-zinc-400 font-semibold'>
+          <h1 className='mt-5 text-lg text-zinc-400 font-semibold'>
             Summary
           </h1>
           <Horizontal data={info.combinedCredits.cast} />
@@ -112,7 +112,7 @@ const PeopleDetails = () => {
 
 
           <div>
-            <h1 className='mt-10 text-xl text-zinc-400 font-semibold'>
+            <h1 className='mt-10 text-base text-zinc-400 font-semibold'>
               Acting
             </h1>
             <div className='w-full p-5 list-disc text-zinc-400 mt-5 h-[50vh] overflow-x-auto overflow-y-scroll  shadow-xl border-2 border-zinc-700 shadow-[rgba(255,255,255,.2)]'>

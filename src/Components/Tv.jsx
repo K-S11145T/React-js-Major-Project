@@ -56,7 +56,7 @@ const Tv = () => {
       <div className=' flex px-[3%] items-center gap-4'>
 
 
-        <h1 className='text-zinc-300 text-2xl flex gap-4 items-center  font-semibold'>
+        <h1 className='text-zinc-300 text-lg flex gap-4 items-center w-[20%] font-semibold'>
           <i onClick={() => navigate(-1)} class="ri-arrow-left-line hover:text-blue-700 "></i>
           TV Shows</h1>
         <Topnav />

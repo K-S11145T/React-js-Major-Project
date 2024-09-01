@@ -59,7 +59,7 @@ const Popular = () => {
       <div className=' flex px-[3%] items-center gap-4'>
 
 
-        <h1 className='text-zinc-300 text-2xl flex gap-4 items-center  font-semibold'>
+        <h1 className='text-zinc-300 text-xl flex gap-4 items-center  font-semibold'>
           <i onClick={() => navigate(-1)} class="ri-arrow-left-line hover:text-blue-700 "></i>
           Popular</h1>
         <Topnav />
